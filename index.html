@@ -1,205 +1,623 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Marlon</a>
+    <!-- =====BOX ICONS===== -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/file-icons-js@1.1.0/css/style.css" rel="stylesheet">
+    <title>Portfolio website complete</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">NCT</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#background" class="nav__link">Background</a></li>
+                    <li class="nav__item"><a href="#project" class="nav__link">Project</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Truc</span><br> Data Analyst<br>/
+                    Data Scientist
+                </h1>
+
+                <a href="#contact" class="button">Contact</a>
+                <a href="assets/CV_Truc.pdf" class="button" download>Download CV</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/truc0202/" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://www.facebook.com/nct0202/" class="home__social-icon"><i
+                        class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/truc0202" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="50" y="0" href="assets/img/perfil-removebg-preview.png" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title"><span class="highlight">About Me</span></h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/truc.jpg" alt="">
                 </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                <div>
+                    <h2 class="about__subtitle">Hello, I'm Truc!</h2>
+                    <p class="about__text">I’m a <b>Computer Science</b> student with a strong passion for <b>data</b>
+                        and <b>AI</b>. My experience spans <b>data analytics and machine learning</b> through academic
+                        projects and internships. I’ve worked with key <b>AI domains</b> including <b>Natural Language
+                            Processing
+                            (NLP), chatbot development, and computer vision</b>.
+                        <br><br>
+                        Proficient in <strong>SQL, Python, Google Sheets, Microsoft Excel, statistics, and Power
+                            BI</strong> I specialize in transforming <b>raw data</b> into <b>meaningful insights</b>
+                        through
+                        <b>end-to-end analysis</b> and <b>interactive visualizations</b>. I'm eager to contribute to
+                        impactful,
+                        <b>data-driven solutions</b> in <b>dynamic</b> and <b>collaborative environments</b>.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title"><span class="highlight">Technical Skills</span></h2>
+            <div class="skills__container bd-grid skills__custom">
+                <!-- Programming Languages -->
+                <div class="skills__column">
+                    <h3 class="skills__heading">Programming<br><span class="white">Languages</span></h3>
+                    <ul class="skills__list">
+                        <li><i class='bx bx-data skills__icon-img'></i> SQL</li>
+                        <li><i class='bx bxl-python skills__icon-img'></i> Python</li>
                     </ul>
                 </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
+                <!-- Data Analytic Tools -->
+                <div class="skills__column">
+                    <h3 class="skills__heading">Data Analytic<br><span class="white">Tools</span></h3>
+                    <ul class="skills__list">
+                        <li>
+                            <img src="https://image.similarpng.com/file/similarpng/very-thumbnail/2021/09/Microsoft-Excel-icon-design-on-transparent-background-PNG.png"
+                                alt="Excel" class="skills__icon-img"> Microsoft Excel
+                        </li>
+                        <li style="display: flex; align-items: center;">
+                            <span class="skills__icon-img"
+                                style=" border-radius:50%; padding:7px; width:44px; height:44px; display:flex; align-items:center; justify-content:center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                    fill="white">
+                                    <path
+                                        d="M19.555 5.168 14.832.445A1.5 1.5 0 0 0 13.768 0H6.5A2.5 2.5 0 0 0 4 2.5v19A2.5 2.5 0 0 0 6.5 24h11a2.5 2.5 0 0 0 2.5-2.5v-16.27a1.5 1.5 0 0 0-.445-1.062zm-4.555-2.75 4.582 4.582H15.5a.5.5 0 0 1-.5-.5V2.418zM19 21.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-19a.5.5 0 0 1 .5-.5h6.5V6.25A2.25 2.25 0 0 0 15.25 8.5H21.5V21.5a.5.5 0 0 1-.5.5zm-9-10h8v1h-8zm0 3h8v1h-8zm0 3h5v1h-5z" />
+                                </svg>
+                            </span>
+                            <span style="margin-left:10px;">Google Sheets</span>
+                        </li>
+                        <li style="display: flex; align-items: center;">
+                            <span class="skills__icon-img"
+                                style=" border-radius:50%; padding:7px; width:44px; height:44px; display:flex; align-items:center; justify-content:center;">
+                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
+                                    <path
+                                        d="M16.9414 4.9757a7.033 7.033 0 0 0-4.9308 2.0646 7.033 7.033 0 0 0-.1232 9.8068l2.395-2.395a3.6455 3.6455 0 0 1 5.1497-5.1478l2.397-2.3989a7.033 7.033 0 0 0-4.8877-1.9297zM7.07 4.9855a7.033 7.033 0 0 0-4.8878 1.9316l2.3911 2.3911a3.6434 3.6434 0 0 1 5.0227.1271l1.7341-2.9737-.0997-.0802A7.033 7.033 0 0 0 7.07 4.9855zm15.0093 2.1721l-2.3892 2.3911a3.6455 3.6455 0 0 1-5.1497 5.1497l-2.4067 2.4068a7.0362 7.0362 0 0 0 9.9456-9.9476zM1.932 7.1674a7.033 7.033 0 0 0-.002 9.6816l2.397-2.397a3.6434 3.6434 0 0 1-.004-4.8916zm7.664 7.4235c-1.38 1.3816-3.5863 1.411-5.0168.1134l-2.397 2.395c2.4693 2.3328 6.263 2.5753 9.0072.5455l.1368-.1115z" />
+                                </svg>
+                            </span>
+                            <span style="margin-left:10px;">Google Collab</span>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Marlon</span><br> Web Designer</h1>
-
-                    <a href="#" class="button">Contact</a>
+                <!-- Data Visualization Tools -->
+                <div class="skills__column">
+                    <h3 class="skills__heading">Data Visualization<br><span class="white">Tools</span></h3>
+                    <ul class="skills__list">
+                        <li><i class='bx bx-scatter-chart skills__icon-img'></i> Power BI</li>
+                    </ul>
                 </div>
-
-                <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                <!-- Data Analytic Methods -->
+                <div class="skills__column">
+                    <h3 class="skills__heading">Data Analytic<br><span class="white">Methods</span></h3>
+                    <ul class="skills__list skills__list--methods">
+                        <li>EDA</li>
+                        <li>Segmentation / Clustering</li>
+                        <li>Cohort</li>
+                        <li>Linear Regression</li>
+                        <li>Logistic Regression</li>
+                        <li>Statistic</li>
+                        <li>A/B Testing</li>
+                        <li>ANOVA</li>
+                        <li>(Post-Hoc) T-Test</li>
+                    </ul>
                 </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Marlon</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Marlon</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
-        </footer>
+        </section>
+        <!--===== Background =====-->
+        <section class="background section" id="background">
+            <h2 class="section-title"><span class="highlight">Education & Experience Background</span></h2>
+            <div class="background__container-2col">
+                <!-- Education -->
+                <div class="background__col">
+                    <h3 class="background__bigtitle">EDUCATION</h3>
+                    <div class="background__item">
+                        <div class="background__icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Logo_UIT_updated.svg/951px-Logo_UIT_updated.svg.png"
+                                alt="UIT">
+                        </div>
+                        <div>
+                            <b class="background__school">University of Information Technology</b><br>
+                            <span class="background__degree">
+                                Bachelor of Computer Science <br>
+                                GPA: 8.34/10.00
+                            </span><br>
+                            <span class="background__degree">Ho Chi Minh City, Vietnam</span><br>
+                            <span class="background__desc">
+                                Sep 2022 - Sep 2025(Expected)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="background__item">
+                        <div class="background__icon">
+                            <img src="https://mindx.edu.vn/favicon.ico" alt="MindX">
+                        </div>
+                        <div>
+                            <b class="background__school">MindX Technology School</b><br>
+                            <span class="background__degree">Data Analyst</span><br>
+                            <span class="background__degree">Ho Chi Minh City, Vietnam</span><br>
+                            <span class="background__desc">
+                                Aug 2023 - May 2024
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience -->
+                <div class="background__col">
+                    <h3 class="background__bigtitle">EXPERIENCE</h3>
+                    <div class="background__item">
+                        <div>
+                            <img src="assets/img/CMT.png" alt="CMT-Global Group">
+                        </div>
+                        <div>
+                            <b class="background__school">CMT-Global Group</b><br>
+                            <span class="background__degree">Data Analyst Intern</span><br>
+                            <span class="background__degree">Remote</span><br>
+                            <span class="background__desc">
+                                Feb 2025 - May 2025
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--===== PROJECT =====-->
+        <section class="project section" id="project">
+            <h2 class="section-title"><span class="highlight">Projects</span></h2>
+            <!-- Data Science Projects Carousel -->
+            <h3 class="project__subtitle" style="color:var(--first-color);margin-bottom:12px;">Data Science</h3>
+            <!-- Add this after the first .carousel-card project-card-full in the Data Science section -->
+            <div class="carousel-card project-card-full">
+                <div class="project-card-img-full">
+                    <img src="assets/img/Poster.png" alt="User Retention & Loyalty Prediction in E-Commerce">
+                </div>
+                <div class="project-card-info-full">
+                    <div>
+                        <h2 class="project-title-big">01 USER RETENTION & LOYALTY PREDICTION IN E-COMMERCE</h2>
+                        <p class="project-desc-big">
+                            The key customer segment for the platform consists of married middle-aged women (31-45 years
+                            old), who exhibit consistent purchasing power and a unique loyalty pattern—they remain loyal
+                            to product categories rather than specific items, creating an ideal opportunity for
+                            cross-selling.
+                            This purchasing behavior is strongly driven by major campaigns like 11/11, during which even
+                            previously churned customers return. Additionally, shopping activity peaks at the end of the
+                            month and on weekdays.
+                            However, a critical challenge has been identified—a bottleneck in the purchase journey:
+                            while users frequently click to explore, the conversion rate from "add to cart" to actual
+                            purchases remains low. This suggests that the platform needs to optimize the shopping
+                            experience and build trust to encourage customers to complete their transactions.
+
+                        </p>
+                        <div class="project-link-group">
+                            <a class="project-link-full"
+                                href="https://drive.google.com/drive/u/0/folders/1syHb4fg-hgkuJSrXsa6xr8HgAfQGDIzL"
+                                target="_blank">Source Code</a>
+                            <a class="project-link-full"
+                                href="https://drive.google.com/file/d/13zGH8HJ2npuOUeaOR7BcVqlGZNxSK_1v/view?usp=sharing"
+                                target="_blank">Report</a>
+
+                        </div>
+
+                        <div class="project-link-group">
+                            <!-- Add links to your full report, dashboard, or code if available -->
+                            <!-- Example: -->
+                            <!-- <a class="project-link-full" href="#" target="_blank">Full Report</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+            <!-- Salary Prediction -->
+            <div class="carousel-card project-card-full">
+                <div class="project-card-img-full">
+                    <img src="assets/img/poster_salary_predict.png" alt="Data Science Salary Prediction">
+                </div>
+                <div class="project-card-info-full">
+                    <div>
+                        <h2 class="project-title-big">02 DATA SCIENCE SALARY PREDICTION</h2>
+                        <p class="project-desc-big">
+                            The primary objective of this project is to analyze the 2024 data science job market. Our
+                            analysis reveals an average salary range of $74,700 to $128,200, with the Data Scientist
+                            role commanding the highest compensation. Foundational skills include Python and SQL, while
+                            AWS and Spark are in high demand for technical positions. Job opportunities are primarily
+                            concentrated in high-cost-of-living states like California, Massachusetts, and New York.
+                            Experience level is a key determinant of salary, with Senior and Principal roles earning the
+                            most.
+                            Beyond this market overview, a secondary objective was to train machine learning models
+                            (including XGBoost, Random Forest, SVR, and Linear Regression) to predict salaries. This
+                            provides a valuable tool for both companies and candidates to benchmark compensation. The
+                            XGBoost model achieved the highest accuracy with an R² score of 82.86%, enabling precise
+                            salary predictions based on selected factors like location, skills, and experience.
+                        </p>
+                        <div class="project-link-group">
+                            <a class="project-link-full"
+                                href="https://github.com/truc0202/Data-Science-Salary-Prediction" target="_blank">Source
+                                Code</a>
+                            <a class="project-link-full"
+                                href="https://docs.google.com/presentation/d/1QOTZqCMKJ5bUJvut-xNe2LE8kWs3W1VI/edit?usp=drive_web&ouid=116138074591280316888&rtpof=true"
+                                target="_blank">Full Deck</a>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lung Cancer Prediction -->
+            <div class="carousel-card project-card-full">
+                <div class="project-card-img-full">
+                    <img src="assets/img/poster_lung_cancer_predict.png" alt="Lung Cancer Prediction">
+                </div>
+                <div class="project-card-info-full">
+                    <div>
+                        <h2 class="project-title-big">03 LUNG CANCER PREDICTION</h2>
+                        <p class="project-desc-big">
+                            This project began with an in-depth analysis of lung cancer incidence, comparing high- and
+                            low-pollution groups to identify key risk factors from hospital survey data. Through
+                            Exploratory Data Analysis (EDA), 12 out of 20 significant contributors were identified. To
+                            further understand their impact, patients were categorized into low, medium, and high-risk
+                            groups based on factor severity. This segmentation enabled evaluation of the most critical
+                            drivers, such as air pollution, smoking, genetic risk, and chronic lung disease.
+
+                            Leveraging these insights, multiple machine learning models were developed and tested to
+                            predict lung cancer risk, including Logistic Regression, Decision Tree, and KNN. The Random
+                            Forest model emerged as the top performer, achieving an outstanding accuracy of 99%. Based
+                            on these robust findings, actionable recommendations were provided to promote respiratory
+                            health, including minimizing pollution exposure, improving indoor air quality, and
+                            advocating for early screening in high-risk individuals.
+                        </p>
+                        <div class="project-link-group">
+                            <a class="project-link-full" href="https://github.com/truc0202/Lung-Cancer-Prediction"
+                                target="_blank">Source Code</a>
+                            <a class="project-link-full"
+                                href="https://docs.google.com/presentation/d/1-cqUO8wEEJeYk1pW2e6GqoGBM1ie4MHwSKsa7u6Qu3E/edit"
+                                target="_blank">Full Deck</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Churn Analysis -->
+            <div class="carousel-card project-card-full">
+                <div class="project-card-img-full">
+                    <img src="assets/img/poster_churn_analysis.png" alt="Customer Churn Analysis">
+                </div>
+                <div class="project-card-info-full">
+                    <div>
+                        <h2 class="project-title-big">04 CUSTOMER CHURN ANALYSIS</h2>
+                        <p class="project-desc-big">
+                            The primary purpose of this analysis is to deeply investigate the root causes of customer
+                            churn in the telecommunications sector and develop a strategic framework to reduce churn and
+                            enhance customer retention.
+                            The analysis precisely identifies the highest-risk customer segments: over 55% of users on
+                            month-to-month contracts are likely to churn, alongside senior citizens. Regarding services,
+                            the report highlights a critical weakness, with over 44% of Fiber Optic internet users
+                            showing a tendency to leave, while high-spending customers (>$70) also record a significant
+                            churn rate. The analysis also identifies a high-potential yet volatile segment of new
+                            customers (0-20 months tenure), who constitute 43% of the customer base and have a 9.8%
+                            churn rate.
+                            The core significance of this project extends beyond problem diagnosis; it provides a clear,
+                            data-driven action plan. The proposed recommendations—such as enhancing incentives for
+                            long-term contracts to target the >55% high-risk group or improving service value to retain
+                            high-spending (>$70) customers—are designed to directly address these quantified issues. As
+                            a result, this analysis serves as a strategic tool, enabling the business to make effective
+                            decisions, retain valuable customers, and drive sustainable growth.
+
+                        </p>
+                        <div class="project-link-group">
+                            <a class="project-link-full" href="https://github.com/truc0202/Maven-Churn-Telecom"
+                                target="_blank">Source Code</a>
+                            <a class="project-link-full"
+                                href="https://docs.google.com/presentation/d/1YWkaAQlMeBsynDs41hO94A96yKx-Rwc7/edit?slide=id.p1#slide=id.p1"
+                                target="_blank">Full Deck</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Pizza Sales Analysis -->
+            <div class="carousel-card project-card-full">
+                <div class="project-card-img-full">
+                    <img src="assets/img/poster_pizza_analysis.png" alt="Pizza Sales Analysis">
+                </div>
+                <div class="project-card-info-full">
+                    <div>
+                        <h2 class="project-title-big">05 PIZZA SALES ANALYSIS</h2>
+                        <p class="project-desc-big">
+                            This analysis provides a comprehensive roadmap for Plato's Pizza to optimize revenue and
+                            operational efficiency based on sales data. Temporally, revenue peaks in Q3 (June-August),
+                            with July recording the highest sales at $72,557, reflecting a surge in demand during the
+                            peak tourist season. The analysis also pinpoints golden hours during lunchtime (12-2 PM) and
+                            on weekends, necessitating more effective staff allocation. In terms of product mix,
+                            Traditional Pizza is the top seller (42 units/day), driven by its affordability, while sizes
+                            L and XL dominate sales volume. Conversely, the XXL size sold a mere 28 units annually,
+                            indicating an inefficient product that should be discontinued to reduce inventory costs.
+                            Based on these insights, strategic recommendations include focusing resources on peak
+                            seasons and hours, eliminating underperforming products, optimizing the supply chain by
+                            concentrating on core ingredients like garlic and tomatoes, and adjusting pricing strategies
+                            to boost sales for high-potential yet underexploited items.
+                        </p>
+                        <div class="project-link-group">
+                            <a class="project-link-full" href="https://github.com/truc0202/Maven-Pizza-Challenge"
+                                target="_blank">Source Code</a>
+                            <a class="project-link-full"
+                                href="https://docs.google.com/presentation/d/1RbmY-BhUQ0g-sV2JWOz5V3LTAF1B-Ng7/edit?usp=drive_web&ouid=116138074591280316888&rtpof=true"
+                                target="_blank">Full Deck</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <h3 class="project__subtitle" style="color:var(--first-color);margin-bottom:12px;">Computer Science </h3>
+            <div class="carousel-card project-card-full">
+                <div class="project-card-img-full">
+                    <img src="assets/img/Chatbot1.png" alt="Uber Pricing Optimization">
+                </div>
+                <div class="project-card-info-full">
+                    <div>
+                        <h2 class="project-title-big">01 CHATBOT Music Recommender System Based on User Emotion</h2>
+                        <p class="project-desc-big">
+                            Brief Description:
+                            This project involves the development of an intelligent chatbot designed to provide
+                            personalized music recommendations by discerning the user's emotional state. By leveraging
+                            Natural Language Processing (NLP) techniques, the system analyzes the user's text input in a
+                            conversational context to identify their current mood and curate a tailored playlist that
+                            matches or complements their feelings.
+                            Key Features:
+                            Emotion Detection: Utilizes NLP models to analyze text input in real-time and classify the
+                            user's emotion (e.g., happiness, sadness, anger, calmness).
+                            Personalized Music Recommendation: Generates and suggests music playlists from a pre-tagged
+                            database or via a music streaming API, tailored specifically to the detected emotion.
+                            Interactive Conversational Interface: Provides a natural and engaging chatbot interface,
+                            allowing for a seamless and intuitive user experience.
+                            Technology Stack:
+                            Core Logic & NLP: Python, with libraries such as NLTK, spaCy, or Transformers (Hugging Face)
+                            for sentiment/emotion analysis.
+                            Chatbot Framework: Rasa, ChatterBot, or a custom implementation.
+                            Recommendation Engine: Rule-based matching logic or content-based filtering.
+                            Data Source/API: Integrated with a music API (e.g., Spotify API, Deezer API) or a
+                            custom-built music dataset.
+                            Database: [Specify Database, e.g., MongoDB, SQLite] for storing user interaction history or
+                            music metadata.
+
+                        </p>
+                        <div class="project-link-group">
+                            <a class="project-link-full" href="https://github.com/tot20482/ChatMusic_IR"
+                                target="_blank">Source Code</a>
+                            <a class="project-link-full"
+                                href="https://www.canva.com/design/DAGakVjrQFk/N5zgrer9FxRcJ9xvLyWTAA/edit"
+                                target="_blank">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="carousel-card project-card-full">
+                <div class="project-card-img-full">
+                    <img src="assets/img/FACE.png" alt="Uber Pricing Optimization">
+                </div>
+                <div class="project-card-info-full">
+                    <div>
+                        <h2 class="project-title-big">02 Face Recognition Attendance System</h2>
+                        <p class="project-desc-big">
+                            Brief Description:
+                            This project entails the development of a fully automated attendance system leveraging
+                            facial recognition technology. The primary objective is to streamline and secure the process
+                            of tracking attendance for environments such as educational institutions, corporate offices,
+                            or events, eliminating the need for manual check-ins and reducing administrative overhead.
+                            Key Features:
+                            User Enrollment: Allows for the registration of new individuals by capturing their facial
+                            data and associating it with a unique ID and name.
+                            Real-Time Face Recognition: Utilizes a webcam to detect and identify registered individuals
+                            in real-time as they enter the designated area.
+                            Automated Attendance Logging: Automatically records the check-in time of identified
+                            individuals into a database, creating an accurate and tamper-proof attendance log.
+                            Administrative Dashboard: A comprehensive dashboard for administrators to view attendance
+                            records, generate reports, filter data by date, and visualize statistics.
+                            User Management: Provides functionalities to view, search, and delete registered user
+                            profiles from the system.
+                            Secure Access Control: Features a robust login system to ensure that only authorized
+                            administrators can access the management dashboard and sensitive data.
+                            Potential Technology Stack:
+                            Core Logic: Python
+                            Computer Vision & Face Recognition: OpenCV, Dlib, face_recognition library.
+                            Database: SQLite, MySQL, or PostgreSQL for data persistence.
+                            User Interface/Dashboard: Tkinter, PyQt (for desktop) or Flask/Django (for a web-based
+                            dashboard).
+                        </p>
+                        <div class="project-link-group">
+                            <a class="project-link-full" href="https://github.com/truc0202/face-recognition-system"
+                                target="_blank">Source Code</a>
+                            <a class="project-link-full"
+                                href="https://www.canva.com/design/DAGoRki44o4/Ahj0dwDK0uOgXdvX6NNZ3g/edit"
+                                target="_blank">Report</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="carousel-card project-card-full">
+
+            <div class="project-card-info-full">
+                <div>
+                    <h2 class="project-title-big">03 Lib Management</h2>
+                    <p class="project-desc-big">
+                        Brief Description:
+                        This project aims to develop a comprehensive Library Management System designed to enhance the
+                        quality of library services and streamline administrative workflows for librarians. The software
+                        provides a robust, user-friendly solution for managing daily operations with greater ease and
+                        efficiency.
+                        Key Features:
+                        Patron Management: Manage reader profiles, registration, and history.
+                        Book Inventory Management: Catalog and track all book titles, copies, and their status.
+                        Circulation Management: Process book check-outs (lending) and check-ins (returns), and handle
+                        associated issues such as fines for overdue items.
+                        Statistical Reporting: Generate reports and statistics on borrowing/returning trends to support
+                        decision-making.
+                        Technology Stack:
+                        Architectural Pattern: 3-Layer Architecture (Presentation, Business Logic, Data Access)
+                        implemented in a single-tier desktop application.
+                        Core Technology: Developed using C# on the .NET Framework 4.7.2 with Windows Forms.
+                        User Interface: Siticone UI/UX Framework for a modern and intuitive user experience.
+                        Database: Built and managed using MS SQL Server, with data access handled by Entity Framework
+                        6.4.4 and administration via SQL Server Management Studio (SSMS).
+                    </p>
+                    <div class="project-link-group">
+                        <a class="project-link-full" href="https://github.com/truc0202/face-recognition-system"
+                            target="_blank">Source Code</a>
+                        <a class="project-link-full"
+                            href="https://www.canva.com/design/DAGoRki44o4/Ahj0dwDK0uOgXdvX6NNZ3g/edit"
+                            target="_blank">Report</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-card project-card-full">
+
+            <div class="project-card-info-full">
+                <div>
+                    <h2 class="project-title-big">04 Expert System for the Diagnosis and Treatment of Chronic
+                        Obstructive Pulmonary Disease
+                        (COPD)</h2>
+                    <p class="project-desc-big">
+
+                        Brief Description:
+                        The objective of this project is to develop an expert system that diagnoses a user's health
+                        condition and provides corresponding medical diagnoses and treatment recommendations. The system
+                        operates by guiding the user through a series of structured diagnostic questionnaires and
+                        analyzing their responses.
+                        Technology Stack:
+                        Inference Engine: Built using the Experta library (a rule-based expert system shell for Python).
+                        User Interface (UI): Developed with PyQt6.
+                        Database: [Specify Database Technology, e.g., SQLite, PostgreSQL] used for information storage
+                        and management.
+                    </p>
+                    <div class="project-link-group">
+                        <a class="project-link-full" href="https://github.com/truc0202/face-recognition-system"
+                            target="_blank">Source Code</a>
+                        <a class="project-link-full"
+                            href="https://www.canva.com/design/DAGoRki44o4/Ahj0dwDK0uOgXdvX6NNZ3g/edit"
+                            target="_blank">Report</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Enviar" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Marlon</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
